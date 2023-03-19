@@ -1,0 +1,1587 @@
+/* Flora styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+	background-color: #e0f4d7;
+	color: #000;
+	border: 1px solid #f90;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+	font-family: Arial,Helvetica,Sans-serif;
+	font-size: 90%;
+}
+.calendars-rtl {
+	direction: rtl;
+}
+.calendars-popup {
+	z-index: 1000;
+}
+.calendars-disable {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.calendars a {
+	color: #000;
+	text-decoration: none;
+}
+.calendars a.calendars-disabled {
+	color: #888;
+	cursor: auto;
+}
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    background-color: #fc8;
+    border: none;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+.calendars-nav, .calendars-ctrl {
+	float: left;
+	width: 100%;
+	background-color: #e0f4d7;
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+}
+.datepick-ctrl {
+	background-color: #f90;
+}
+.calendars-cmd {
+	width: 30%;
+}
+.calendars-cmd:hover {
+	background-color: #b1db87;
+}
+.calendars-ctrl .calendars-cmd:hover {
+	background-color: #fa4;
+}
+.calendars-cmd-prevJump, .calendars-cmd-nextJump {
+	width: 8%;
+}
+a.calendars-cmd {
+	height: 1.5em;
+}
+button.calendars-cmd {
+	text-align: center;
+}
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.calendars-cmd-current, .calendars-cmd-today {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close {
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump,
+.calendars-rtl .calendars-cmd-clear {
+	float: right;
+	padding-left: 0%;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today {
+	float: right;
+}
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump,
+.calendars-rtl .calendars-cmd-close {
+	float: left;
+	padding-left: 2%;
+	padding-right: 0%;
+	text-align: left;
+}
+.calendars-month-nav {
+	float: left;
+	background-color: #b1db87;
+	text-align: center;
+}
+.calendars-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.calendars-month-nav span {
+	color: #888;
+}
+.calendars-month-row {
+	clear: left;
+}
+.calendars-month {
+	float: left;
+	width: 15em;
+	border: 1px solid #83c948;
+	text-align: center;
+}
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+	height: 1.5em;
+	background-color: #83c948;
+	color: #fff;
+	font-weight: bold;
+}
+.calendars-month-header select, .calendars-month-header input {
+	height: 1.4em;
+	border: none;
+}
+.calendars-month-header input {
+	position: absolute;
+	display: none;
+}
+.calendars-month table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.calendars-month thead {
+	border-bottom: 1px solid #aaa;
+}
+.calendars-month th, .calendars-month td {
+	margin: 0em;
+	padding: 0em;
+	font-weight: normal;
+	text-align: center;
+}
+.calendars-month th {
+	border: 1px solid #b1db87;
+}
+.calendars-month th, .calendars-month th a {
+	background-color: #b1db87;
+	color: #000;
+	border: 1px solid #b1db87;
+}
+.calendars-month td {
+	background-color: #fff;
+	color: #666;
+	border: 1px solid #b1db87;
+}
+.calendars-month td.calendars-week * {
+	background-color: #b1db87;
+	color: #666;
+	border: none;
+}
+.calendars-month a {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+	text-decoration: none;
+}
+.calendars-month span {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+}
+.calendars-month td span {
+	color: #888;
+}
+.calendars-month td .calendars-other-month {
+	background-color: #e0f4d7;
+}
+.calendars-month td .calendars-weekend {
+	background-color: #e0f4d7;
+}
+.calendars-month td .calendars-today {
+	background-color: #b1db87;
+}
+.calendars-month td .calendars-highlight {
+	background-color: #fc8;
+}
+.calendars-month td .calendars-selected {
+	background-color: #f90;
+	color: #fff;
+}
+.calendars-status {
+	clear: both;
+	background-color: #b1db87;
+	text-align: center;
+}
+.calendars-clear-fix {
+	clear: both;
+}
+
+/* Humanity styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+	background-color: #f4f0ec;
+	color: #1e1b1c;
+	border: 1px solid #cb842e;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+	font-family: Arial,Helvetica,Sans-serif;
+	font-size: 90%;
+}
+.calendars-rtl {
+	direction: rtl;
+}
+.calendars-popup {
+	z-index: 1000;
+}
+.calendars-disable {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.calendars a {
+	color: #1e1b1c;
+	text-decoration: none;
+}
+.calendars a.calendars-disabled {
+	color: #888;
+	cursor: auto;
+}
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    background-color: #ede4d4;
+    border: none;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+.calendars-nav, .calendars-ctrl {
+	float: left;
+	width: 100%;
+	background-color: #ede4d4;
+	font-size: 90%;
+	font-weight: bold;
+}
+.calendars-ctrl {
+	background-color: #cb842e;
+}
+.calendars-cmd {
+	width: 30%;
+}
+.calendars-cmd:hover {
+	background-color: #f4f0ec;
+}
+.calendars-cmd-prevJump, .calendars-cmd-nextJump {
+	width: 8%;
+}
+a.calendars-cmd {
+	height: 1.5em;
+}
+button.calendars-cmd {
+	text-align: center;
+}
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.calendars-cmd-current, .calendars-cmd-today {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close {
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump,
+.calendars-rtl .calendars-cmd-clear {
+	float: right;
+	padding-left: 0%;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today {
+	float: right;
+}
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump,
+.calendars-rtl .calendars-cmd-close {
+	float: left;
+	padding-left: 2%;
+	padding-right: 0%;
+	text-align: left;
+}
+.calendars-month-nav {
+	float: left;
+	text-align: center;
+}
+.calendars-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.calendars-month-nav span {
+	color: #888;
+}
+.calendars-month-row {
+	clear: left;
+}
+.calendars-month {
+	float: left;
+	width: 17em;
+	border: 1px solid #e0cfc2;
+	text-align: center;
+}
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+	height: 1.5em;
+	background-color: #cb842e;
+	color: #fff;
+	font-weight: bold;
+}
+.calendars-month-header select, .calendars-month-header input {
+	height: 1.4em;
+	border: none;
+}
+.calendars-month-header input {
+	position: absolute;
+	display: none;
+}
+.calendars-month table {
+	width: 100%;
+	border: 2px solid transparent;
+	border-collapse: collapse;
+}
+.calendars-month th, .calendars-month td {
+	margin: 0em;
+	padding: 0.125em;
+	font-weight: normal;
+	text-align: center;
+}
+.calendars-month td.calendars-week,
+.calendars-month td.calendars-week * {
+	background-color: #cb842e;
+	color: #fff;
+	border: 1px solid #cb842e;
+}
+.calendars-month a {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+	background-color: #ede4d4;
+	color: #000;
+	border: 1px solid #cdc3b7;
+	text-decoration: none;
+}
+.calendars-month span {
+	display: block;
+	margin-top: 0.25em;
+}
+.calendars-month a {
+	background-color: #ede4d4;
+	color: #444;
+	border: 1px solid #cdc3b7;
+	text-decoration: none;
+}
+.calendars-month td span {
+	color: #888;
+}
+.calendars-month td .calendars-other-month {
+	background-color: #f4f0ec;
+}
+.calendars-month td .calendars-today {
+	background-color: #f5f5b5;
+	border: 1px solid #d9bb73;
+}
+.calendars-month td .calendars-highlight {
+	background-color: #f5f0e5;
+	color: #1e1b1c;
+	border: 1px solid #f5ad66;
+}
+.calendars-month td .calendars-selected {
+	background-color: #cb842e;
+	color: #fff;
+	border: 1px solid #cb842e;
+}
+.calendars-status {
+	clear: both;
+	text-align: center;
+}
+.calendars-clear-fix {
+	clear: both;
+}
+
+/* Default styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #444;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+	font-family: Arial,Helvetica,Sans-serif;
+	font-size: 90%;
+}
+.calendars-rtl {
+	direction: rtl;
+}
+.calendars-popup {
+	z-index: 1000;
+}
+.calendars-disable {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.calendars a {
+	color: #fff;
+	text-decoration: none;
+}
+.calendars a.calendars-disabled {
+	color: #888;
+	cursor: auto;
+}
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    background-color: #fcc;
+    border: none;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+.calendars-nav, .calendars-ctrl {
+	float: left;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+}
+.calendars-ctrl {
+	background-color: #600;
+}
+.calendars-cmd {
+	width: 30%;
+}
+.calendars-cmd:hover {
+	background-color: #777;
+}
+.calendars-ctrl .calendars-cmd:hover {
+	background-color: #f08080;
+}
+.calendars-cmd-prevJump, .calendars-cmd-nextJump {
+	width: 8%;
+}
+a.calendars-cmd {
+	height: 1.5em;
+}
+button.calendars-cmd {
+	text-align: center;
+}
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.calendars-cmd-current, .calendars-cmd-today {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close {
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump,
+.calendars-rtl .calendars-cmd-clear {
+	float: right;
+	padding-left: 0%;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today {
+	float: right;
+}
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump,
+.calendars-rtl .calendars-cmd-close {
+	float: left;
+	padding-left: 2%;
+	padding-right: 0%;
+	text-align: left;
+}
+.calendars-month-nav {
+	float: left;
+	background-color: #777;
+	text-align: center;
+}
+.calendars-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.calendars-month-nav span {
+	color: #888;
+}
+.calendars-month-row {
+	clear: left;
+}
+.calendars-month {
+	float: left;
+	width: 15em;
+	border: 1px solid #444;
+	text-align: center;
+}
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+	height: 1.5em;
+	background-color: #444;
+	color: #fff;
+	font-weight: bold;
+}
+.calendars-month-header select, .calendars-month-header input {
+	height: 1.4em;
+	border: none;
+}
+.calendars-month-header input {
+	position: absolute;
+	display: none;
+}
+.calendars-month table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.calendars-month thead {
+	border-bottom: 1px solid #aaa;
+}
+.calendars-month th, .calendars-month td {
+	margin: 0em;
+	padding: 0em;
+	font-weight: normal;
+	text-align: center;
+}
+.calendars-month th {
+	border: 1px solid #777;
+}
+.calendars-month th, .calendars-month th a {
+	background-color: #777;
+	color: #fff;
+}
+.calendars-month td {
+	background-color: #eee;
+	border: 1px solid #aaa;
+}
+.calendars-month td.calendars-week {
+	border: 1px solid #777;
+}
+.calendars-month td.calendars-week * {
+	background-color: #777;
+	color: #fff;
+	border: none;
+}
+.calendars-month a {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+	background-color: #eee;
+	color: #000;
+	text-decoration: none;
+}
+.calendars-month span {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+}
+.calendars-month td span {
+	color: #888;
+}
+.calendars-month td .calendars-other-month {
+	background-color: #fff;
+}
+.calendars-month td .calendars-weekend {
+	background-color: #ddd;
+}
+.calendars-month td .calendars-today {
+	background-color: #f0c0c0;
+}
+.calendars-month td .calendars-highlight {
+	background-color: #f08080;
+}
+.calendars-month td .calendars-selected {
+	background-color: #777;
+	color: #fff;
+}
+.calendars-month th.calendars-week {
+	background-color: #777;
+	color: #fff;
+}
+.calendars-status {
+	clear: both;
+	background-color: #ddd;
+	text-align: center;
+}
+.calendars-clear-fix {
+	clear: both;
+}
+
+/* Redmond styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+	background-color: #fff;
+	color: #222;
+	border: 1px solid #4297d7;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+	font-family: Arial,Helvetica,Sans-serif;
+	font-size: 90%;
+}
+.calendars-rtl {
+	direction: rtl;
+}
+.calendars-popup {
+	z-index: 1000;
+}
+.calendars-disable {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.calendars a {
+	color: #222;
+	text-decoration: none;
+}
+.calendars a.calendars-disabled {
+	color: #888;
+	cursor: auto;
+}
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+	background-color: #5c9ccc;
+	color: #fff;
+    border: none;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+.calendars-nav, .calendars-ctrl {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+}
+.calendars-ctrl {
+	background-color: #d0e5f5;
+}
+.calendars-cmd {
+	width: 30%;
+}
+.calendars-cmd:hover {
+	background-color: #dfeffc;
+}
+button.calendars-cmd:hover {
+	background-color: #79b7e7;
+}
+.calendars-cmd-prevJump, .calendars-cmd-nextJump {
+	width: 8%;
+}
+a.calendars-cmd {
+	height: 1.5em;
+}
+button.calendars-cmd {
+	text-align: center;
+}
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.calendars-cmd-current, .calendars-cmd-today {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close {
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump,
+.calendars-rtl .calendars-cmd-clear {
+	float: right;
+	padding-left: 0%;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today {
+	float: right;
+}
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump,
+.calendars-rtl .calendars-cmd-close {
+	float: left;
+	padding-left: 2%;
+	padding-right: 0%;
+	text-align: left;
+}
+.calendars-month-nav {
+	float: left;
+	text-align: center;
+}
+.calendars-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.calendars-month-nav span {
+	color: #888;
+}
+.calendars-month-row {
+	clear: left;
+}
+.calendars-month {
+	float: left;
+	width: 15em;
+	border: 1px solid #5c9ccc;
+	text-align: center;
+}
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+	height: 1.5em;
+	background-color: #5c9ccc;
+	color: #fff;
+	font-weight: bold;
+}
+.calendars-month-header select, .calendars-month-header input {
+	height: 1.4em;
+	border: none;
+}
+.calendars-month-header input {
+	position: absolute;
+	display: none;
+}
+.calendars-month table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.calendars-month thead {
+	border-bottom: 1px solid #aaa;
+}
+.calendars-month th, .calendars-month td {
+	margin: 0em;
+	padding: 0em;
+	font-weight: normal;
+	text-align: center;
+}
+.calendars-month th {
+	border: 1px solid #fff;
+	border-bottom: 1px solid #c5dbec;
+}
+.calendars-month td {
+	border: 1px solid #c5dbec;
+}
+.calendars-month td.calendars-week * {
+	background-color: #d0e5f5;
+	color: #222;
+	border: none;
+}
+.calendars-month a {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+	background-color: #dfeffc;
+	color: #000;
+	text-decoration: none;
+}
+.calendars-month span {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+}
+.calendars-month td span {
+	color: #888;
+}
+.calendars-month td .calendars-other-month {
+	background-color: #fff;
+}
+.calendars-month td .calendars-today {
+	background-color: #fad42e;
+}
+.calendars-month td .calendars-highlight {
+	background-color: #79b7e7;
+}
+.calendars-month td .calendars-selected {
+	background-color: #4297d7;
+	color: #fff;
+}
+.calendars-status {
+	clear: both;
+	text-align: center;
+}
+.calendars-clear-fix {
+	clear: both;
+}
+
+/* Smoothness styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+	background-color: #fff;
+	color: #222;
+	border: 1px solid #aaa;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+	font-family: Arial,Helvetica,Sans-serif;
+	font-size: 90%;
+}
+.calendars-rtl {
+	direction: rtl;
+}
+.calendars-popup {
+	z-index: 1000;
+}
+.calendars-disable {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.calendars a {
+	color: #222;
+	text-decoration: none;
+}
+.calendars a.calendars-disabled {
+	color: #888;
+	cursor: auto;
+}
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    background-color: #fcc;
+    border: none;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+.calendars-nav, .calendars-ctrl {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+}
+.calendars-ctrl {
+	background-color: #fee6e3;
+}
+.calendars-cmd {
+	width: 30%;
+}
+.calendars-cmd:hover {
+	background-color: #e0e0e0;
+}
+.calendars-ctrl .calendars-cmd:hover {
+	background-color: #f08080;
+}
+.calendars-cmd-prevJump, .calendars-cmd-nextJump {
+	width: 8%;
+}
+a.calendars-cmd {
+	height: 1.5em;
+}
+button.calendars-cmd {
+	text-align: center;
+}
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.calendars-cmd-current, .calendars-cmd-today {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close {
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump,
+.calendars-rtl .calendars-cmd-clear {
+	float: right;
+	padding-left: 0%;
+	padding-right: 2%;
+	text-align: right;
+}
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today {
+	float: right;
+}
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump,
+.calendars-rtl .calendars-cmd-close {
+	float: left;
+	padding-left: 2%;
+	padding-right: 0%;
+	text-align: left;
+}
+.calendars-month-nav {
+	float: left;
+	text-align: center;
+}
+.calendars-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.calendars-month-nav span {
+	color: #888;
+}
+.calendars-month-row {
+	clear: left;
+}
+.calendars-month {
+	float: left;
+	width: 15em;
+	border: 1px solid #aaa;
+	text-align: center;
+}
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+	height: 1.5em;
+	background-color: #e0e0e0;
+	color: #222;
+	font-weight: bold;
+}
+.calendars-month-header select, .calendars-month-header input {
+	height: 1.4em;
+	border: none;
+}
+.calendars-month-header input {
+	position: absolute;
+	display: none;
+}
+.calendars-month table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.calendars-month thead {
+	border-bottom: 1px solid #aaa;
+}
+.calendars-month th, .calendars-month td {
+	margin: 0em;
+	padding: 0em;
+	font-weight: normal;
+	text-align: center;
+}
+.calendars-month thead tr {
+	border: 1px solid #aaa;
+}
+.calendars-month td {
+	background-color: #eee;
+	border: 1px solid #aaa;
+}
+.calendars-month td.calendars-week * {
+	background-color: #e0e0e0;
+	color: #222;
+	border: none;
+}
+.calendars-month a {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+	background-color: #eee;
+	color: #000;
+	text-decoration: none;
+}
+.calendars-month span {
+	display: block;
+	width: 100%;
+	padding: 0.125em 0em;
+}
+.calendars-month td span {
+	color: #888;
+}
+.calendars-month td .calendars-other-month {
+	background-color: #fff;
+}
+.calendars-month td .calendars-weekend {
+	background-color: #ddd;
+}
+.calendars-month td .calendars-today {
+	background-color: #fbf9ee;
+}
+.calendars-month td .calendars-highlight {
+	background-color: #dadada;
+}
+.calendars-month td .calendars-selected {
+	background-color: #fcc;
+}
+.calendars-status {
+	clear: both;
+	text-align: center;
+}
+.calendars-clear-fix {
+	clear: both;
+}
+
+/* ThemeRoller Blacktie override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #eeeeee; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #1c1c1c; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #333333; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Blitzer override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #f6f6f6; /* Set (.ui-state-hover) colours from theme here */
+	color: #111111;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #cc0000; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #555555; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Cupertino override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #222222; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #f0f0f0; /* Set (.ui-state-hover) colours from theme here */
+	color: #0b5b98;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #e7eef3; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Dark Hive override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #003147; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #444444; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #eeeeee; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller DotLuv override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #f6f6f6; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #00498f; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #0b3e6f; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #ffffff; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Eggplant override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #eae6ea; /* Set (.ui-state-hover) colours from theme here */
+	color: #734d99;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #30273a; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #fafafa; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller ExciteBike override style sheet for jQuery dCalendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #e69700; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #2293f7; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #f9f9f9; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #333333; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Flick override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #444444; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #0073ea; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #dddddd; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #444444; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller HotSneaks override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #e1e463; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #ccd232; /* Set (.ui-state-hover) colours from theme here */
+	color: #212121;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #35414f; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Humanity override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #f5f0e5; /* Set (.ui-state-hover) colours from theme here */
+	color: #a46313;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #cb842e; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #060200; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Le Frog override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #4eb305; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #3a8104; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller MintChoc override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #222222; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #44372c; /* Set (.ui-state-hover) colours from theme here */
+	color: #add978;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #cdc2a1; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #ffffff; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Overcast override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #444444; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #f8f8f8; /* Set (.ui-state-hover) colours from theme here */
+	color: #599fcf;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #dddddd; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #444444; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Pepper Grinder override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #453821; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #654b24; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #ffffff; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #3a3427; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Redmond override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #d0e5f5; /* Set (.ui-state-hover) colours from theme here */
+	color: #1d5987;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #5c9ccc; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Smoothness override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #222222; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #dadada; /* Set (.ui-state-hover) colours from theme here */
+	color: #212121;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #cccccc; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller SouthStreet override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #222222; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #5a9d1a; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #d3e9a0; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Start override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #eaf5f7; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #79c9ec; /* Set (.ui-state-hover) colours from theme here */
+	color: #026890;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #2191c0; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #915608; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+﻿/* ThemeRoller Sunny override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #ffdd57; /* Set (.ui-state-hover) colours from theme here */
+	color: #381f00;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #817865; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #1f1f1f; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller SwankyPurse override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #eacd86; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #675423; /* Set (.ui-state-hover) colours from theme here */
+	color: #f8eec9;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #261803; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #060200; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller TronTastic override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #222222; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #000000; /* Set (.ui-state-hover) colours from theme here */
+	color: #96f226;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #9fda58; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #030303; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller UI Darkness override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #0078a3; /* Set (.ui-state-hover) colours from theme here */
+	color: #ffffff;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #333333; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #2e7db2; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller UI Lightness override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #fdf5ce; /* Set (.ui-state-hover) colours from theme here */
+	color: #c77405;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #f6a828; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #363636; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller Vader override style sheet for jQuery Calendars Picker v2.0.0. */
+@import "ui.calendars.picker.css";
+
+.ui-widget-header a,
+.ui-widget-header select {
+	color: #ffffff; /* Set (.ui-widget-header a) colour from theme here */
+}
+.ui-widget-header a:hover {
+	background-color: #dddddd; /* Set (.ui-state-hover) colours from theme here */
+	color: #000000;
+}
+.ui-widget-header select,
+.ui-widget-header option {
+	background-color: #888888; /* Set (.ui-widget-header) background colour from theme here */
+}
+.ui-state-highlight a {
+	color: #cccccc; /* Set (.ui-state-highlight) colour from theme here */
+}
+
+/* ThemeRoller override style sheet for jQuery Calendars Picker v2.0.0. */
+.ui-datepicker {
+	display: block;
+}
+#ui-datepicker-div,
+.ui-datepicker-inline {
+	width: 17em;
+	font-size: 75%;
+}
+#ui-datepicker-div {
+	z-index: 100;
+}
+.ui-datepicker-inline {
+	float: left;
+}
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+#ui-datepicker-div a,
+.ui-datepicker-inline a {
+	text-decoration: none;
+}
+.ui-datepicker-prompt {
+	height: 1.5em;
+	padding-top: 0.25em;
+	text-align: center;
+}
+button.ui-datepicker-cmd {
+	height: 2em;
+}
+.ui-datepicker-cmd-clear {
+	float: left;
+	margin-left: 0.25em;
+}
+.ui-datepicker-cmd-close {
+	float: right;
+	margin-right: 0.25em;
+}
+.ui-datepicker-cmd-prev {
+	position: static;
+	float: left;
+	width: 30%;
+	height: auto;
+	margin-left: 1%;
+}
+.ui-datepicker-cmd-next {
+	position: static;
+	float: right;
+	width: 30%;
+	height: auto;
+	margin-right: 1%;
+	text-align: right;
+}
+.ui-datepicker-cmd-current,
+.ui-datepicker-cmd-today {
+	float: left;
+	width: 37%;
+	text-align: center;
+}
+.ui-datepicker-month-nav {
+	float: left;
+	text-align: center;
+}
+.ui-datepicker-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.ui-datepicker-month-nav span {
+	color: #888;
+}
+.ui-datepicker-row-break {
+	width: 100%;
+	font-size: 100%;
+}
+.ui-datepicker-group {
+	float: left;
+	width: 17em;
+}
+.ui-datepicker-group .ui-datepicker-header {
+	height: 1.5em;
+	text-align: center;
+}
+.ui-datepicker select,
+.ui-datepicker-inline select {
+	width: auto;
+	height: 1.66em;
+	border: none;
+	font-weight: bold;
+}
+.ui-datepicker th {
+	padding: 0.5em 0.3em;
+}
+.ui-datepicker td,
+.ui-datepicker td a,
+.ui-datepicker td span {
+	border: 1px solid transparent;
+	text-align: center;
+}
+.ui-datepicker-status {
+	padding: 0.25em 0em;
+	text-align: center;
+}
+.ui-datepicker .ui-helper-clearfix {
+	clear: both;
+}

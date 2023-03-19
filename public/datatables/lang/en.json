@@ -1,0 +1,44 @@
+{
+  "sEmptyTable": "Table is empty",
+  "sLoadingRecords": "Loading...",
+  "sProcessing": "Processing...",
+  "sLengthMenu": "Show _MENU_ entries",
+  "sZeroRecords": "No matching records found",
+  "sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+  "sInfoEmpty": "Showing 0 to 0 of 0 record",
+  "sInfoFiltered": "(filtered from total _MAX_ entries)",
+  "sSearch": "Search:",
+  "searchPlaceholder": "search for all...",
+  "oPaginate": {
+    "sFirst": "First",
+    "sPrevious": "Previous",
+    "sNext": "Next",
+    "sLast": "Last"
+  },
+  "oAria": {
+    "sSortAscending": ": تفعيل لترتيب العمود تصاعدياً",
+    "sSortDescending": ": تفعيل لترتيب العمود تنازلياً"
+  },
+  "select": {
+    "rows": {
+      "_": "%d قيمة محددة",
+      "0": "",
+      "1": "1 قيمة محددة"
+    }
+  },
+  "buttons": {
+    "print": "طباعة",
+    "colvis": "الأعمدة الظاهرة",
+    "copy": "نسخ إلى الحافظة",
+    "copyTitle": "نسخ",
+    "copyKeys": "زر <i>ctrl</i> أو <i>\u2318</i> + <i>C</i> من الجدول<br>ليتم نسخها إلى الحافظة<br><br>للإلغاء اضغط على الرسالة أو اضغط على زر الخروج.",
+    "copySuccess": {
+      "_": "%d قيمة نسخت",
+      "1": "1 قيمة نسخت"
+    },
+    "pageLength": {
+      "-1": "اظهار الكل",
+      "_": "إظهار %d أسطر"
+    }
+  }
+}
